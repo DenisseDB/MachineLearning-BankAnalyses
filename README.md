@@ -54,6 +54,8 @@ El DataSet seleccionado se encuentra desbalanceado, por lo tanto, se aplicó una
 - Evitar que el modelo la ignore
 - Enseñar al modelo a "preocuparse" más por equivocarse en esa clase
 
+[Resultados obtenidos de usar KMS](https://docs.google.com/document/d/12I2x_W3b65_ED02_U1Mz-l8_pFuiHT1xsY9UG99Pkmw/edit?usp=sharing)
+
 ### Matriz de Confusión
 
 Para evaluar el desempeño del modelo, se utilizó una **matriz de confusión**, la cual permite visualizar:
@@ -71,5 +73,6 @@ Puesto que nuestro DataSet esta desbalanceado y se balanceo después, hemos usad
 - Racall: De los TP, cuantos detecto el modelo
 - F1 Score: Media entre Precision y Recall (para datos desbalanceados)
 - Support: Cuantos yes y no había
+  [Métricas obtenidas](https://docs.google.com/document/d/12I2x_W3b65_ED02_U1Mz-l8_pFuiHT1xsY9UG99Pkmw/edit?usp=sharing)
 
 
