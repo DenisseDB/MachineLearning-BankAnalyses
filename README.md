@@ -57,6 +57,7 @@ Una vez los datos están preprocesados, se procede a construir y entrenar el mod
 ### Balanceo de Datos
 
 El principal problema de este conjunto de datos es el desbalanceo entre clases. Para conocer las estrategias y métodos implementados para abordar esta situación, consulte el siguiente documento.
+[Reporte Balanceo de Datos](Resultados_Obtenidos.pdf)
 
 ### Matriz de Confusión
 
@@ -70,7 +71,7 @@ Para evaluar el desempeño del modelo, se utilizó una **matriz de confusión**,
 Esto permite no solo medir la precisión general del modelo, sino también entender su comportamiento frente a cada clase, especialmente en contextos con desbalance de datos.
 
 ### Métricas
-Puesto que nuestro DataSet esta desbalanceado y se balanceo después, hemos usado las siguientes métricas, de la prediccion:
+Dado que nuestro dataset presentaba un desbalance de clases que fue corregido mediante técnicas de balanceo, utilizamos las siguientes métricas para evaluar el desempeño del modelo de predicción:
 - Precision: Cuantos eran realmente positivos
 - Racall: De los TP, cuantos detecto el modelo
 - F1 Score: Media entre Precision y Recall (para datos desbalanceados)
@@ -78,6 +79,6 @@ Puesto que nuestro DataSet esta desbalanceado y se balanceo después, hemos usad
 
 ### Resultados
 Te invito a consultar el siguiente documento, donde podrás encontrar los distintos enfoques que exploramos, junto con sus respectivos resultados. Al final, también se presenta la estrategia seleccionada y su desempeño final.
-[Métricas obtenidas](https://docs.google.com/document/d/12I2x_W3b65_ED02_U1Mz-l8_pFuiHT1xsY9UG99Pkmw/edit?usp=sharing)
+[Resultados](Resultados_Obtenidos.pdf)
 
 
