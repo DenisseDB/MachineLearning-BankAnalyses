@@ -46,15 +46,17 @@ Nos guiamos por la estrategia de "Titanic Solution: One-Hot-Encode All The Thing
 
 Una vez los datos están preprocesados, se procede a construir y entrenar el modelo.
 
-### Balanceo de Datos con KMeans-SMOTE
+### Hiperparámetros utilizados
 
-El DataSet seleccionado se encuentra desbalanceado, por lo tanto, se aplicó una técnica de **balanceo de clases** utilizando **KMeans-SMOTE**, quien genera nuevas instancias de la clase minoritaria, permitiendo:
+- **Learning Rate**: Ajustado a `0.0005` para lograr una convergencia más estable.
+- **Batch Size**: Establecido en `64`, balanceando entre ruido y eficiencia.
+- **Class Weight**: Dar mayor peso a la clase minoritaria.
+- **Threshold**: Reducido de `0.5` a `0.4` para favorecer la detección de la clase "Yes".
+- **Capas Densas**: Se usaron 4 capas con distintas profundidades y `dropout` para evitar sobreajuste.
 
-- Aumentar la representación de la clase minoritaria (yes)
-- Evitar que el modelo la ignore
-- Enseñar al modelo a "preocuparse" más por equivocarse en esa clase
+### Balanceo de Datos
 
-[Resultados obtenidos de usar KMS](https://docs.google.com/document/d/12I2x_W3b65_ED02_U1Mz-l8_pFuiHT1xsY9UG99Pkmw/edit?usp=sharing)
+El principal problema de este conjunto de datos es el desbalanceo entre clases. Para conocer las estrategias y métodos implementados para abordar esta situación, consulte el siguiente documento.
 
 ### Matriz de Confusión
 
@@ -73,6 +75,9 @@ Puesto que nuestro DataSet esta desbalanceado y se balanceo después, hemos usad
 - Racall: De los TP, cuantos detecto el modelo
 - F1 Score: Media entre Precision y Recall (para datos desbalanceados)
 - Support: Cuantos yes y no había
-  [Métricas obtenidas](https://docs.google.com/document/d/12I2x_W3b65_ED02_U1Mz-l8_pFuiHT1xsY9UG99Pkmw/edit?usp=sharing)
+
+### Resultados
+Te invito a consultar el siguiente documento, donde podrás encontrar los distintos enfoques que exploramos, junto con sus respectivos resultados. Al final, también se presenta la estrategia seleccionada y su desempeño final.
+[Métricas obtenidas](https://docs.google.com/document/d/12I2x_W3b65_ED02_U1Mz-l8_pFuiHT1xsY9UG99Pkmw/edit?usp=sharing)
 
 
